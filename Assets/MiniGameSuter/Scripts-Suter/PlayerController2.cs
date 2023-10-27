@@ -11,16 +11,23 @@ public class PlayerController2 : MonoBehaviour
     private float movementY;
     public float speed = 0;
     public TextMeshProUGUI countText;
+    public TextMeshProUGUI remainingText;
     private int count;
     public GameObject winTextObject;
+    public int pickupsCount = 0;
+    public int startingPickupsCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
         rb = GetComponent<Rigidbody>();
+        startingPickupsCount = GameObject.FindGameObjectsWithTag("PickUp").Length;
+        pickupsCount = GameObject.FindGameObjectsWithTag("PickUp").Length;
         SetCountText();
         winTextObject.SetActive(false);
+        Debug.Log("pickupsCount: " + pickupsCount);
+        
     }
 
     void OnMove(InputValue movementValue)
@@ -33,11 +40,13 @@ public class PlayerController2 : MonoBehaviour
     public void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 4)
+        remainingText.text = "Remaining!!! " + pickupsCount.ToString();
+        if (count >= startingPickupsCount)
         {
             winTextObject.SetActive(true);
             Destroy(GameObject.FindGameObjectWithTag("Enemy"));
         }
+        
     }
 
     private void FixedUpdate()
@@ -52,6 +61,7 @@ public class PlayerController2 : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count++;
+            pickupsCount--;
             SetCountText();
         }
         
