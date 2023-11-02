@@ -16,6 +16,7 @@ public class PlayerController2 : MonoBehaviour
     public GameObject winTextObject;
     public int pickupsCount = 0;
     public int startingPickupsCount = 0;
+    public AudioSource audioDroplet;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class PlayerController2 : MonoBehaviour
             count++;
             pickupsCount--;
             SetCountText();
+            audioDroplet.Play();
         }
         
     }
