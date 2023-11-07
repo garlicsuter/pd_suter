@@ -17,6 +17,9 @@ public class PlayerController2 : MonoBehaviour
     public int pickupsCount = 0;
     public int startingPickupsCount = 0;
     public AudioSource audioDroplet;
+    public ParticleSystem particleBoom;
+    public ParticleSystem pickupFX;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +44,7 @@ public class PlayerController2 : MonoBehaviour
     public void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        remainingText.text = "Remaining!!! " + pickupsCount.ToString();
+        remainingText.text = "Remaining: " + pickupsCount.ToString();
         if (count >= startingPickupsCount)
         {
             winTextObject.SetActive(true);
@@ -60,6 +63,8 @@ public class PlayerController2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            var currentPickupFX = Instantiate(pickupFX, other.transform.position, Quaternion.identity);
+
             other.gameObject.SetActive(false);
             count++;
             pickupsCount--;
@@ -73,6 +78,9 @@ public class PlayerController2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            //play the boom particle
+            particleBoom.Play();
+
             Destroy(gameObject);
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You LOOOOSE!";
