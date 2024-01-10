@@ -147,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1457934
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -270,13 +270,11 @@ MonoBehaviour:
   countText: {fileID: 1202710112}
   remainingText: {fileID: 624127933}
   winTextObject: {fileID: 1460222842}
-  restartObject: {fileID: 1019049090}
   pickupsCount: 0
   startingPickupsCount: 0
   audioDroplet: {fileID: 1457944}
   particleBoom: {fileID: 184880660}
   pickupFX: {fileID: 2062448117}
-  isMoving: 0
 --- !u!114 &1457940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,16 +677,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_025
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ca90fac1afa8f5946836b64da49f06c7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: ca90fac1afa8f5946836b64da49f06c7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -716,7 +704,7 @@ GameObject:
   - component: {fileID: 76970589}
   - component: {fileID: 76970588}
   - component: {fileID: 76970587}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: east wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,16 +903,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_279 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 52269e46ba655c84ca924fc1488b0997,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 52269e46ba655c84ca924fc1488b0997,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6033,28 +6011,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 964703392}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &232988458
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232988456}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2.2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &232988459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6191,6 +6147,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 964703392}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &232988464
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232988456}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &237122551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f90afe2aa7042248a459413baf933c6,
@@ -6562,29 +6540,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ramp-problem (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: a5ad844f34474cd47a939ce3e4cb06db,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 306192485}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ad844f34474cd47a939ce3e4cb06db, type: 3}
 --- !u!4 &306192483 stripped
 Transform:
@@ -6592,34 +6557,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 306192482}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &306192484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db,
-    type: 3}
-  m_PrefabInstance: {fileID: 306192482}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &306192485
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306192484}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8956276461189781062, guid: a5ad844f34474cd47a939ce3e4cb06db, type: 3}
 --- !u!1001 &314949094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6693,16 +6630,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6729,7 +6656,7 @@ GameObject:
   - component: {fileID: 331394952}
   - component: {fileID: 331394951}
   - component: {fileID: 331394950}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6917,16 +6844,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7075,16 +6992,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7184,16 +7091,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_269 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7321,11 +7218,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -7611,7 +7503,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 232988458}
+      objectReference: {fileID: 0}
     - target: {fileID: 1866809260404879694, guid: d05bc94ca1dbedc4d96cc86571e516d5,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -7822,11 +7714,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1866809261150045294, guid: d05bc94ca1dbedc4d96cc86571e516d5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1866809261248167589, guid: d05bc94ca1dbedc4d96cc86571e516d5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -7976,7 +7863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473443480}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Roads
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8149,7 +8036,6 @@ RectTransform:
   - {fileID: 1202710111}
   - {fileID: 624127932}
   - {fileID: 1460222843}
-  - {fileID: 1019049091}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8307,16 +8193,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_153
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8532,16 +8408,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ramp-problem
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: a5ad844f34474cd47a939ce3e4cb06db,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: a5ad844f34474cd47a939ce3e4cb06db,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8728,11 +8594,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -8984,16 +8845,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_269 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9138,16 +8989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_269
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: de84a14be21a4b84f8e499ddc71d988b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9229,16 +9070,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_172
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 51b633d1ef5720c41913fb6ba1a5418c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 51b633d1ef5720c41913fb6ba1a5418c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9354,16 +9185,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_153 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9425,7 +9246,7 @@ GameObject:
   - component: {fileID: 763794475}
   - component: {fileID: 763794474}
   - component: {fileID: 763794476}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Mesh1_Group1_Model (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9531,7 +9352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 770211356}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: boxes south (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9598,11 +9419,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicBox (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9667,7 +9483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 846828182}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: boxes south
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9708,7 +9524,7 @@ GameObject:
   - component: {fileID: 878706482}
   - component: {fileID: 878706481}
   - component: {fileID: 878706480}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10060,11 +9876,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicBox (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10199,16 +10010,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10295,7 +10096,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.579416
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10305,12 +10106,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.263872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4687991
+      value: 0.0001118481
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10320,7 +10121,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8833048
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10335,7 +10136,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 124.087
+      value: 179.987
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10355,7 +10156,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10373,10 +10174,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 232988458}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 232988459}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
@@ -10386,6 +10183,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 232988462}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4045aaad14b4ee246b9cb73923ee3601,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 232988464}
     - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 4045aaad14b4ee246b9cb73923ee3601,
         type: 3}
       insertIndex: -1
@@ -10490,11 +10291,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicBox (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10568,11 +10364,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -10751,152 +10542,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 634294370}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1019049090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1019049091}
-  - component: {fileID: 1019049095}
-  - component: {fileID: 1019049094}
-  - component: {fileID: 1019049093}
-  - component: {fileID: 1019049092}
-  m_Layer: 5
-  m_Name: Restart
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1019049091
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019049090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1066995496}
-  m_Father: {fileID: 499320473}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -55.6}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1019049092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019049090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeddecb34d63cec4ca2e432a6212b387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1019049093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019049090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1019049094}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1019049092}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1019049094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019049090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1019049095
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019049090}
-  m_CullTransparentMesh: 1
 --- !u!1 &1035218335
 GameObject:
   m_ObjectHideFlags: 0
@@ -10906,7 +10551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035218336}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: cubey-ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11001,140 +10646,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dfc89fe8e0f244da7fe03edc587aab, type: 3}
---- !u!1 &1066995495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1066995496}
-  - component: {fileID: 1066995498}
-  - component: {fileID: 1066995497}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1066995496
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066995495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1019049091}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1066995497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066995495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Restart
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1066995498
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066995495}
-  m_CullTransparentMesh: 1
 --- !u!4 &1075453796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
@@ -11324,16 +10835,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11421,7 +10922,7 @@ GameObject:
   - component: {fileID: 1103599789}
   - component: {fileID: 1103599788}
   - component: {fileID: 1103599787}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: south wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11523,7 +11024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1112576244}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11617,11 +11118,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -12003,16 +11499,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_210 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12094,16 +11580,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_184
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 148d3eb1e79e8c444a60dc04ea5d547a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 148d3eb1e79e8c444a60dc04ea5d547a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12327,16 +11803,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_153 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12419,16 +11885,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_210 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12450,7 +11906,7 @@ GameObject:
   - component: {fileID: 1237967447}
   - component: {fileID: 1237967446}
   - component: {fileID: 1237967445}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: north wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12583,7 +12039,7 @@ GameObject:
   - component: {fileID: 1281617391}
   - component: {fileID: 1281617390}
   - component: {fileID: 1281617392}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Mesh1_Group1_Model (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13248,7 +12704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1460222843
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13412,11 +12868,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicBox (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13552,11 +13003,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -14171,16 +13617,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14434,16 +13870,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_172 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 51b633d1ef5720c41913fb6ba1a5418c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 51b633d1ef5720c41913fb6ba1a5418c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14642,7 +14068,7 @@ GameObject:
   - component: {fileID: 1816820006}
   - component: {fileID: 1816820005}
   - component: {fileID: 1816820010}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14842,7 +14268,7 @@ GameObject:
   - component: {fileID: 1841098732}
   - component: {fileID: 1841098731}
   - component: {fileID: 1841098733}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Mesh1_Group1_Model (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15181,16 +14607,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15322,7 +14738,7 @@ GameObject:
   - component: {fileID: 1868963974}
   - component: {fileID: 1868963973}
   - component: {fileID: 1868963972}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: obstacle-cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15443,11 +14859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
@@ -15582,16 +14993,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadTile_210 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15786,16 +15187,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_170 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: fb5f7bf8f671e984193a7d905742be6e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15949,45 +15340,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021437105}
-  - component: {fileID: 2021437104}
-  m_Layer: 7
+  - component: {fileID: 2021437106}
+  m_Layer: 0
   m_Name: Scenic Objects+NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2021437104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021437103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 1
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.27
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 8a49db59fc6e3b747b4b3a01d13011b8, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!4 &2021437105
 Transform:
   m_ObjectHideFlags: 0
@@ -16012,6 +15372,37 @@ Transform:
   - {fileID: 878706479}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2021437106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021437103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.27
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 70ba1173d6154994dba76cea4d0fe5ac, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &2031434422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1586702691628044531, guid: 52269e46ba655c84ca924fc1488b0997,
@@ -16113,16 +15504,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_210
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 7b4f2f497ce6c8142867de4897b34d74,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16150,7 +15531,7 @@ GameObject:
   - component: {fileID: 2062844267}
   - component: {fileID: 2062844266}
   - component: {fileID: 2062844265}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: west wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16575,16 +15956,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile_153 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586702691628044531, guid: 1f90afe2aa7042248a459413baf933c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16752,11 +16123,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DynamicBox
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959305552559145677, guid: 03083d14703130241abdcfd76981167f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6975296115213198223, guid: 03083d14703130241abdcfd76981167f,
         type: 3}
